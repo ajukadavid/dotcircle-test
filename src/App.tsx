@@ -3,6 +3,8 @@ import Navbar from './Navbar'
 import Hero from './Hero'
 import Services from './Services'
 import Choose from './Choose'
+import Prompt from './Prompt'
+import Footer from './Footer'
 function App() {
 
   return (
@@ -12,6 +14,8 @@ function App() {
       <Hero />
       <Services />
       <Choose />
+      <Prompt />
+      <Footer />
       </div>
       
     </>
