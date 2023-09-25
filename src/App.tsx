@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './Navbar'
 import Hero from './Hero'
 import Services from './Services'
+import Choose from './Choose'
 function App() {
 
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <Services />
+      <Choose />
       </div>
       
     </>
