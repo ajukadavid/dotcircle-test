@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import title from './assets/serviceTitle.png';
 import cardImage from './assets/cardImg.svg';
 
@@ -32,10 +32,8 @@ function Services() {
         description:
           "We take an innovative approach to problem-solving, this allows us to develop solutions that meet the specific needs of the client and deliver the best possible outcome in the most efficient manner.",
       },
-    // Add more card data here as needed
   ];
 
-  // Use state to track the index of the hovered card
   const [hoveredIndex, setHoveredIndex] = useState(-1);
 
   return (
