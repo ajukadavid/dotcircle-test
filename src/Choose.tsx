@@ -4,6 +4,7 @@ import imgThree from './assets/choose_3.svg';
 import imgFour from './assets/choose_4.svg';
 import title from './assets/choose_title.svg';
 import Slider from './components/Slider'
+import Blog from './components/Blog'
 
 function Choose() {
   const cardData = [
@@ -87,6 +88,12 @@ function Choose() {
         </div>
               <div>
                 <Slider />
+              </div>
+              <div className='mt-20'>
+          <img src={title} alt="Title" />
+        </div>
+              <div>
+                <Blog />
               </div>
       </div>
     </>

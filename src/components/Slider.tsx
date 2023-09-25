@@ -5,7 +5,7 @@ function Slider() {
     
   return (
     <>
-      <div className='bg-black'>
+      <div className='bg-black mt-5'>
       <Marquee>
       <div className='grid grid-cols-2 gap-8 '>
         <div className='flex flex-col h-fit w-[679px] py-10 px-8 mx-5 border rounded-lg bg-[#0f0f0f]'>
@@ -68,7 +68,8 @@ function Slider() {
         </div>
        </div>
         </div>
-        </div></Marquee>
+        </div>
+        </Marquee>
         
        
       </div>
