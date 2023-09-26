@@ -46,7 +46,7 @@ function Services() {
           <div
             key={card.id}
             className={`border card border-transparent rounded-lg ${
-              index === 0 || index === 2 ? "md:mt-4" : ""
+              index === 0 || index === 2 ? "md:mt-20" : ""
             }`}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(-1)}

@@ -3,7 +3,7 @@ import footerLogo from './assets/footer-logo.png';
 function Footer() {
   return (
     <>
-    <div className='bg-black font-basic flex flex-col md:flex-row md:justify-between mt-10 px-5 md:px-20'>
+    <div className='bg-black pb-10 font-basic flex flex-col md:flex-row md:justify-between mt-10 px-5 md:px-20'>
       <div className='flex flex-col md:w-1/4 md:mr-32 text-center text-[#CCD7E1] mb-6 md:mb-0'>
         <div>
           <img src={footerLogo} alt='Footer Logo' />
@@ -84,7 +84,6 @@ function Footer() {
         </div>
       </div>
 
-      {/* Right Section */}
       <div className='flex flex-col md:w-3/4 md:flex md:gap-32 md:justify-end gap-6 md:flex-row'>
         {/* Column 1 */}
         <ul className='flex flex-col gap-2 md:gap-6'>

@@ -4,7 +4,7 @@ import logo from './assets/logo.png';
 function MobileMenu({ isOpen, closeMenu }) {
   return (
     <div className=' '>
-       <div className={`fixed inset-x-0 top-0 z-20 bg-black transition-transform duration-300 transform ${isOpen ? 'translate-y-0' : '-translate-y-full'}`}>
+       <div className={`fixed inset-x-0 top-0 bg-black transition-transform duration-300 transform ${isOpen ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="flex justify-end mt-8 mr-4">
         <button
           className="text-white text-2xl focus:outline-none"
@@ -33,8 +33,8 @@ function NavBar() {
   };
 
   return (
-    <div className="bg-black  fixed top-0 left-0 right-0 py-3">
-      <div className="container mx-auto flex items-center  lg:px-8 justify-between">
+    <div className="bg-black z-20 fixed top-0 left-0 right-0 py-3">
+      <div className="container bg-black mx-auto flex items-center  lg:px-8 justify-between">
         <img src={logo} alt="Logo" className="h-12" />
 
         <div className="lg:hidden flex items-center">

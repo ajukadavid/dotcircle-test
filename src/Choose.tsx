@@ -49,23 +49,21 @@ function Choose() {
         "At DotCircle, we care about our clients and go above and beyond to make sure they are happy with the final products. This is what makes us stand out from the rest.",
       border: 'hover:border-l-blue-400 hover:border border-transparent',
       topClass: 'absolute top-0 left-0 bg-blue-400 w-1/2 h-[1px] hidden',
-      bottomClass: 'absolute bottom-0 left-0 bg-blue-400 w-1/2 h-[1px] hidden'
+      bottomClass: 'absolute -z-20 bottom-0 left-0 bg-blue-400 w-1/2 h-[1px] hidden'
     },
   ];
 
   return (
     <>
-      <div className='bg-black text-white mt-20'>
+      <div className='bg-black text-white mt-20 -z-30'>
         <div>
           <img src={title} alt="Title" />
         </div>
-        <div className="grid gap-5 md:grid-cols-2 mt-20 px-5">
+        <div className="grid gap-5 -z-30  max-w-fit md:grid-cols-2 mt-20 px-5">
   {cardData.map((card, index) => (
     <div
       key={index}
-      className={`flex ${card.border} font-basic text-[#D0D0D0] relative cursor-pointer bg-[#131313] gap-5 rounded-lg px-4 py-8 flex-col ${
-        index % 2 === 0 ? 'md:flex-row-reverse' : '' 
-      }`}
+      className={`flex ${card.border} font-basic text-[#D0D0D0] relative cursor-pointer bg-[#131313] gap-5 rounded-lg px-4 py-8 flex-col`}
       onMouseEnter={() => {
         document.getElementById(`top-${card.id}`)!.classList.remove('hidden');
         document.getElementById(`bottom-${card.id}`)!.classList.remove('hidden');
@@ -79,7 +77,7 @@ function Choose() {
       <div>
         <img src={card.image} alt={card.title} />
       </div>
-      <div className="text-center md:text-left"> {/* Center text on mobile, left-align on medium screens */}
+      <div className="text-center max-w-fit md:text-left"> {/* Center text on mobile, left-align on medium screens */}
         <span className='text-2xl font-semibold'>{card.title}</span>
         <p className='text-sm font-light'>{card.description}</p>
       </div>
