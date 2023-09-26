@@ -52,7 +52,7 @@ const Prompt = () => {
           cursorVisible ? "block" : "hidden"
         }`}
       >
-        <div className="h-full w-full animate-spin-slow bg-gradient-to-r from-[#202020] via-[#from-[#202020] via-[#062625] to-[#18887f] via-[#178179]"></div>
+        <div className="h-full w-full animate-spin-slow bg-gradient-to-r from-[#202020] via-[#from-[#202020]  via-[#1DA99E] to-[#178179]"></div>
       </div>
       <div
         className="relative grid h-screen w-full place-items-center wrapper"
