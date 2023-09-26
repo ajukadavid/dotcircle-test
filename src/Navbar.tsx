@@ -1,7 +1,12 @@
 import { useState } from 'react';
 import logo from './assets/logo.png';
 
-function MobileMenu({ isOpen, closeMenu }) {
+interface MobileMenuProps {
+  isOpen: boolean;
+  closeMenu: () => void;
+}
+
+function MobileMenu({ isOpen, closeMenu }: MobileMenuProps) {
   return (
     <div className=' '>
        <div className={`fixed inset-x-0 top-0 bg-black transition-transform duration-300 transform ${isOpen ? 'translate-y-0' : '-translate-y-full'}`}>

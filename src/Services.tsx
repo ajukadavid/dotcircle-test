@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import title from "./assets/serviceTitle.png";
 import cardImage from "./assets/cardImg.svg";
 
@@ -33,9 +33,7 @@ function Services() {
         "We take an innovative approach to problem-solving, this allows us to develop solutions that meet the specific needs of the client and deliver the best possible outcome in the most efficient manner.",
     },
   ];
-
   const [hoveredIndex, setHoveredIndex] = useState(-1);
-
   return (
     <div className="bg-black px-5 md:px-10 mt-10 md:mt-20">
       <div className="text-white">

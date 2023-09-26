@@ -85,7 +85,6 @@ function Footer() {
       </div>
 
       <div className='flex flex-col md:w-3/4 md:flex md:gap-32 md:justify-end gap-6 md:flex-row'>
-        {/* Column 1 */}
         <ul className='flex flex-col gap-2 md:gap-6'>
             <li className='text-[#1da99e]'>QUICK LINKS</li>
             <li className='text-[#a1a1aa]'>Home</li>
@@ -93,8 +92,6 @@ function Footer() {
             <li className='text-[#a1a1aa]'>Our Team</li>
             <li className='text-[#a1a1aa]'>Contact us</li>
           </ul>
-
-          {/* Column 2 */}
           <ul className='flex flex-col gap-2 md:gap-6'>
             <li className='text-[#1da99e]'>SERVICES</li>
             <li className='text-[#a1a1aa]'>Web Development</li>
@@ -104,8 +101,6 @@ function Footer() {
             <li className='text-[#a1a1aa]'>Product Design</li>
             <li className='text-[#a1a1aa]'>Audit & IT Consultancy</li>
           </ul>
-
-          {/* Column 3 */}
           <ul className='flex flex-col gap-2 md:gap-6'>
             <li className='text-[#1da99e]'>LEGAL</li>
             <li className='text-[#a1a1aa]'>Terms & Conditions</li>
