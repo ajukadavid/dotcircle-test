@@ -27,7 +27,7 @@ const buttonStyle =
 
   return (
     <>
-      <div className='flex  flex-col w-full items-center justify-center'>
+      <main className='flex  flex-col w-full items-center justify-center'>
         <div className="flex gap-16 flex-col w-full items-center justify-center mt-40">
         <p className="px-8 font-hero text-white">
             <span className={ currentValue === 1 ? 'font-extrabold text-7xl md:text-8xl  transition-all font-hero duration-1000 text-transparent bg-clip-text bg-gradient-to-r from-[#0052CC] to-[#00C7F3]' : 'text-white font-hero font-extrabold text-7xl md:text-8xl'}>Design. </span>
@@ -52,7 +52,7 @@ const buttonStyle =
             <div className="mt-20">
                 <HeroImg src={heroImage}/>
             </div>
-      </div>
+      </main>
       
     </>
   )

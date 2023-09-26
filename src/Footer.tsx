@@ -1,17 +1,20 @@
+
 import footerLogo from './assets/footer-logo.png';
 
 function Footer() {
   return (
     <>
-    <div className='bg-black pb-10 font-basic flex flex-col md:flex-row md:justify-between mt-10 px-5 md:px-20'>
-      <div className='flex flex-col md:w-1/4 md:mr-32 text-center text-[#CCD7E1] mb-6 md:mb-0'>
-        <div>
-          <img src={footerLogo} alt='Footer Logo' />
-        </div>
-        <span className='mt-2 md:mt-0'>
-          We pride ourselves on our work ethic and our ability to think outside the box.
-        </span>
-        <div className='flex items-center justify-center md:justify-start mt-4 mb-5 md:mb-0'>
+      <footer className='bg-black pb-10 font-basic flex flex-col gap-6 mb-8 mt-10 px-5 md:px-20'>
+
+        <div className='flex flex-col gap-4 text-center text-[#CCD7E1] mb-6'>
+          <div>
+            <img src={footerLogo} alt='Footer Logo' className='w-36 md:w-40 mx-auto' />
+          </div>
+          <div className='text-sm'>
+            <span>We pride ourselves on our work ethic and our</span>
+            <span>ability to think outside the box.</span>
+          </div>
+          <div className='flex items-center justify-center mt-4'>
           <span className='mr-2'>
             <svg
               width='16'
@@ -27,9 +30,9 @@ function Footer() {
               />
             </svg>
           </span>
-          <span>+234 906 712 9989</span>
-        </div>
-        <div className='flex gap-4 items-center mt-2 md:mt-4'>
+            <span>+234 906 712 9989</span>
+          </div>
+          <div className='flex gap-4 items-center mt-2'>
           <svg
             width='18'
             height='12'
@@ -81,18 +84,18 @@ function Footer() {
             />
             <circle cx='15.3807' cy='4.62523' r='0.66625' fill='white' fillOpacity='0.37' />
           </svg>
+          </div>
         </div>
-      </div>
 
-      <div className='flex flex-col md:w-3/4 md:flex md:gap-32 md:justify-end gap-6 md:flex-row'>
-        <ul className='flex flex-col gap-2 md:gap-6'>
+        <div className='flex flex-col gap-6'>
+          <ul className='flex flex-col gap-2'>
             <li className='text-[#1da99e]'>QUICK LINKS</li>
             <li className='text-[#a1a1aa]'>Home</li>
             <li className='text-[#a1a1aa]'>Our Services</li>
             <li className='text-[#a1a1aa]'>Our Team</li>
             <li className='text-[#a1a1aa]'>Contact us</li>
           </ul>
-          <ul className='flex flex-col gap-2 md:gap-6'>
+          <ul className='flex flex-col gap-2'>
             <li className='text-[#1da99e]'>SERVICES</li>
             <li className='text-[#a1a1aa]'>Web Development</li>
             <li className='text-[#a1a1aa]'>Mobile Development</li>
@@ -101,15 +104,21 @@ function Footer() {
             <li className='text-[#a1a1aa]'>Product Design</li>
             <li className='text-[#a1a1aa]'>Audit & IT Consultancy</li>
           </ul>
-          <ul className='flex flex-col gap-2 md:gap-6'>
+          <ul className='flex flex-col gap-2'>
             <li className='text-[#1da99e]'>LEGAL</li>
             <li className='text-[#a1a1aa]'>Terms & Conditions</li>
             <li className='text-[#a1a1aa]'>Privacy Policy</li>
             <li className='text-[#a1a1aa]'>Licensing</li>
           </ul>
         </div>
-      </div>
-    
+
+        <div className='mt-6'>
+          <div className='w-full bg-[#a1a1aa] h-[1px]'></div>
+          <div className='w-full flex justify-center text-[#a1a1aa]'>
+            <span>Copyright <span> &#169;</span> DotCircle Labs. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
