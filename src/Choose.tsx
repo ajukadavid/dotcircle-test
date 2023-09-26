@@ -55,38 +55,43 @@ function Choose() {
 
   return (
     <>
-      <div className='bg-black text-white mt-20 px-20'>
+      <div className='bg-black text-white mt-20'>
         <div>
           <img src={title} alt="Title" />
         </div>
-        <div className="grid gap-5 grid-cols-2 mt-20">
-          {cardData.map((card, index) => (
-            <div
-              key={index}
-              className={`flex ${card.border} font-basic text-[#D0D0D0] relative cursor-pointer bg-[#131313] gap-5 rounded-lg px-4 py-8 flex-col`}
-              onMouseEnter={() => {
-                document.getElementById(`top-${card.id}`)!.classList.remove('hidden');
-                document.getElementById(`bottom-${card.id}`)!.classList.remove('hidden');
-              }}
-              onMouseLeave={() => {
-                document.getElementById(`top-${card.id}`)!.classList.add('hidden');
-                document.getElementById(`bottom-${card.id}`)!.classList.add('hidden');
-              }}
-            >
-              <div id={`top-${card.id}`} className={`${card.topClass}`}></div>
-              <div>
-                <img src={card.image} alt={card.title} />
-              </div>
-              <span className='text-2xl font-semibold'>{card.title}</span>
-              <p className='text-sm font-light'>{card.description}</p>
-              <div id={`bottom-${card.id}`} className={`${card.bottomClass}`}></div>
-            </div>
-          ))}
-        </div>
+        <div className="grid gap-5 md:grid-cols-2 mt-20 px-5">
+  {cardData.map((card, index) => (
+    <div
+      key={index}
+      className={`flex ${card.border} font-basic text-[#D0D0D0] relative cursor-pointer bg-[#131313] gap-5 rounded-lg px-4 py-8 flex-col ${
+        index % 2 === 0 ? 'md:flex-row-reverse' : '' 
+      }`}
+      onMouseEnter={() => {
+        document.getElementById(`top-${card.id}`)!.classList.remove('hidden');
+        document.getElementById(`bottom-${card.id}`)!.classList.remove('hidden');
+      }}
+      onMouseLeave={() => {
+        document.getElementById(`top-${card.id}`)!.classList.add('hidden');
+        document.getElementById(`bottom-${card.id}`)!.classList.add('hidden');
+      }}
+    >
+      <div id={`top-${card.id}`} className={`${card.topClass}`}></div>
+      <div>
+        <img src={card.image} alt={card.title} />
+      </div>
+      <div className="text-center md:text-left"> {/* Center text on mobile, left-align on medium screens */}
+        <span className='text-2xl font-semibold'>{card.title}</span>
+        <p className='text-sm font-light'>{card.description}</p>
+      </div>
+      <div id={`bottom-${card.id}`} className={`${card.bottomClass}`}></div>
+    </div>
+  ))}
+</div>
+
         <div className='mt-20'>
           <img src={title} alt="Title" />
         </div>
-              <div>
+              <div className='px-5'>
                 <Slider />
               </div>
               <div className='mt-20'>
