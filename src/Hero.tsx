@@ -27,13 +27,13 @@ const buttonStyle =
 
   return (
     <>
-      <div className='flex flex-col w-full items-center justify-center'>
+      <div className='flex  flex-col w-full items-center justify-center'>
         <div className="flex gap-16 flex-col w-full items-center justify-center mt-40">
-        <p className="text-8xl text-white">
-            <span className={ currentValue === 1 ? 'font-extrabold  transition-all duration-1000 text-transparent text-8xl bg-clip-text bg-gradient-to-r from-[#0052CC] to-[#00C7F3]' : 'text-white font-extrabold text-8xl'}>Design. </span>
-            <span className={ currentValue === 2 ? 'font-extrabold transition-all duration-1000 text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-800 to-purple-400' : 'text-white font-extrabold text-8xl'} >Develop. </span>
-            <span className={ currentValue === 3 ? 'font-extrabold transition-all duration-1000 text-transparent text-8xl bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400' : 'text-white font-extrabold text-8xl'}>Maintain.</span></p>
-        <p className="text-white text-lg">World class design and engineering teams to get your ideas and projects up and running quickly</p>
+        <p className="text-7xl font-hero px-10 text-white">
+            <span className={ currentValue === 1 ? 'font-extrabold  transition-all font-hero duration-1000 text-transparent text-8xl bg-clip-text bg-gradient-to-r from-[#0052CC] to-[#00C7F3]' : 'text-white font-hero font-extrabold text-8xl'}>Design. </span>
+            <span className={ currentValue === 2 ? 'font-extrabold transition-all font-hero  duration-1000 text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-800 to-purple-400' : 'text-white font-hero  font-extrabold text-8xl'} >Develop. </span>
+            <span className={ currentValue === 3 ? 'font-extrabold transition-all font-hero  duration-1000 text-transparent text-8xl bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400' : 'text-white font-hero  font-extrabold text-8xl'}>Maintain.</span></p>
+        <p className="text-[#888888] text-center text-2xl font-basic">World class design and engineering teams to get your ideas and projects <br /> up and running quickly</p>
         <div className="flex gap-4">
         <button className='bg-white px-3 py-2 text-sm text-black border-white border rounded-md'>Start a project</button>
         <div className={`relative border border-transparent rounded-md p-[1px]  ${buttonStyle}`}>

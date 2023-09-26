@@ -3,8 +3,8 @@ function Footer() {
 
   return (
     <>
-      <div className='bg-black flex mt-20 px-20'>
-        <div className='w-1/4 flex gap-10 flex-col mr-32 text-[#a1a1aa]'>
+      <div className='bg-black font-basic  flex mt-20 px-20'>
+        <div className='w-1/4 flex gap-10 flex-col mr-32 text-[#CCD7E1]'>
             <div>
                 <img src={footerLogo} />
             </div>
@@ -41,7 +41,7 @@ function Footer() {
             </ul>
             <ul  className="flex flex-col gap-6">
                 <li className="text-[#1da99e]">SERVICES</li>
-                <li className="text-[#a1a1aa]">Web Development</li>
+                <li className="text-[#a1a1aa] ">Web Development</li>
                 <li  className="text-[#a1a1aa]">Mobile Development</li>
                 <li  className="text-[#a1a1aa]">Blockchain Development</li>
                 <li  className="text-[#a1a1aa]">UI UX Design</li>

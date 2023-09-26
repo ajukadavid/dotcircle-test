@@ -3,7 +3,7 @@ function NavBar() {
 
   return (
     <>
-      <div className="w-full flex items-center px-10 justify-between">
+      <div className="w-full fixed py-3 bg-black top-0 left-0 right-0 flex items-center px-10 justify-between">
        <img src={logo} />
        <ul className='flex text-white gap-16'>
         <li>Case Studies</li>

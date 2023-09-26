@@ -41,7 +41,7 @@ function Services() {
       <div className="text-white">
         <img src={title} alt="Service Title" />
       </div>
-      <div className="grid grid-cols-2 px-20 gap-4 mt-8">
+      <div className="grid font-basic grid-cols-2 px-20 gap-4 mt-8">
         {cardData.map((card, index) => (
           <div
           key={card.id}
@@ -65,7 +65,7 @@ function Services() {
               }`}
             >
               <span className='text-sm'>{card.title}</span>
-              <span className='text-lg'>{card.subtitle}</span>
+              <span className='text-2xl font-bold'>{card.subtitle}</span>
               <p className='text-xs'>{card.description}</p>
             </div>
           </div>

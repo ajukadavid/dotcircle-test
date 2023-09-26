@@ -63,7 +63,7 @@ function Choose() {
           {cardData.map((card, index) => (
             <div
               key={index}
-              className={`flex ${card.border} relative cursor-pointer bg-[#131313] gap-5 rounded-lg px-4 py-8 flex-col`}
+              className={`flex ${card.border} font-basic text-[#D0D0D0] relative cursor-pointer bg-[#131313] gap-5 rounded-lg px-4 py-8 flex-col`}
               onMouseEnter={() => {
                 document.getElementById(`top-${card.id}`)!.classList.remove('hidden');
                 document.getElementById(`bottom-${card.id}`)!.classList.remove('hidden');

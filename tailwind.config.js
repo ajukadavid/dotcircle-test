@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      basic: ["Satoshi", "sans-serif"],
+      title: ["Recoleta", "sans-serif"],
+      hero: ['Inter', 'sans-serif']
+     
+    },
   },
   plugins: [],
 }

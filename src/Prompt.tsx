@@ -61,11 +61,11 @@ const Prompt = () => {
       >
         <div className="absolute inset-0 backdrop-blur-3xl"></div>
         <div className="container relative text-center">
-          <h1 className="mb-10 text-7xl font-semibold text-white">
+          <h1 className="mb-10 font-title text-7xl font-semibold text-white">
           Have a great project in mind? <br/>
             Let’s get started
           </h1>
-          <button className="text-white border border-white bg-[#191919] px-3 rounded-md py-2">Contact us</button>
+          <button className="text-white font-basic border border-white bg-[#191919] px-3 rounded-md py-2">Contact us</button>
         </div>
       </div>
     </>

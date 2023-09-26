@@ -5,7 +5,7 @@ function Slider() {
     
   return (
     <>
-      <div className='bg-black mt-5'>
+      <div className='bg-black mt-12 font-basic'>
       <Marquee>
       <div className='grid grid-cols-2 gap-8 '>
         <div className='flex flex-col h-fit w-[679px] py-10 px-8 mx-5 border rounded-lg bg-[#0f0f0f]'>
@@ -16,7 +16,7 @@ function Slider() {
 <circle cx="20" cy="20" r="20" fill="#D9D9D9"/>
 </svg>
 
-<span> <em>Prof. Claudia Estcourt, Glasgow Caledonian University</em> </span>
+<span> <em className='text-[#a1a1aa]' >Prof. Claudia Estcourt, Glasgow Caledonian University</em> </span>
         </div>
         <div className='w-36 h-5 mb-4'>
             <img className='w-full' src={comma} />
@@ -31,7 +31,7 @@ function Slider() {
 <circle cx="20" cy="20" r="20" fill="#D9D9D9"/>
 </svg>
 
-<span> <em>Prof. Claudia Estcourt, Glasgow Caledonian University</em> </span>
+<span> <em className='text-[#a1a1aa]' >Prof. Claudia Estcourt, Glasgow Caledonian University</em> </span>
         </div>
         <div className='w-36 h-5 mb-4'>
             <img className='w-full' src={comma} />
@@ -46,7 +46,7 @@ function Slider() {
 <circle cx="20" cy="20" r="20" fill="#D9D9D9"/>
 </svg>
 
-<span> <em>Prof. Claudia Estcourt, Glasgow Caledonian University</em> </span>
+<span> <em className='text-[#a1a1aa]' >Prof. Claudia Estcourt, Glasgow Caledonian University</em> </span>
         </div>
         <div className='w-36 h-5 mb-4'>
             <img className='w-full' src={comma} />
@@ -61,7 +61,7 @@ function Slider() {
 <circle cx="20" cy="20" r="20" fill="#D9D9D9"/>
 </svg>
 
-<span> <em>Prof. Claudia Estcourt, Glasgow Caledonian University</em> </span>
+<span> <em className='text-[#a1a1aa]' >Prof. Claudia Estcourt, Glasgow Caledonian University</em> </span>
         </div>
         <div className='w-36 h-5 mb-4'>
             <img className='w-full' src={comma} />

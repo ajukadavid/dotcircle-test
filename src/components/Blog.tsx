@@ -7,8 +7,8 @@ function Blog() {
 
   return (
     <>
-      <div className='flex gap-5 w-full mt-20'>
-        <div className='flex-col flex w-[400px] gap-4'>
+      <div className='flex gap-5 font-basic w-full mt-20'>
+        <div className='flex-col  flex w-[400px] gap-4'>
             <div>
                 <img src={imgOne} />
             </div>
